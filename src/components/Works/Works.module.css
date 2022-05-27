@@ -1,0 +1,81 @@
+.container {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.title {
+	font-size: 22px;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.itemWork {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+	width: 350px;
+	height: 100%;
+	background-color: aqua;
+}
+
+.itemTitle {
+	font-size: 24px;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+
+.itemWork img {
+	width: 50px;
+	height: 50px;
+	object-fit: contain;
+	object-position: center;
+}
+.topContent {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 350px;
+	height: 300px;
+	background-color: aliceblue;
+}
+.topContent img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	top: 0;
+	left: 0;
+	z-index: 0;
+}
+.topContent a {
+	position: relative;
+	z-index: 100;
+	color: #000;
+	background-color: aqua;
+	padding: 10px 20px;
+	border: 1px solid #000;
+}
+.contentExcerpt {
+	padding: 20px 20px 30px 20px;
+	box-sizing: border-box;
+}
+
+@media (max-width: 576px) {
+	.content {
+		flex-direction: column;
+		align-items: center;
+	}
+	.itemWork:not(:last-child) {
+		margin-bottom: 20px;
+	}
+	.container {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+}

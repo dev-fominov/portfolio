@@ -1,0 +1,29 @@
+.container {
+	background-color: aliceblue;
+}
+
+.footer {
+	min-height: 200px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+	padding-bottom: 20px;
+	box-sizing: border-box;
+}
+.socseti {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	display: flex;
+}
+.socseti li:not(:last-child) {
+	margin-right: 10px;
+}
+.socseti li {
+	width: 30px;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
