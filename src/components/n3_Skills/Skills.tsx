@@ -1,6 +1,6 @@
 import React from "react";
 import { Skill } from "./Skill";
-import s from './Skills.module.css';
+import s from './Skills.module.scss';
 
 const skillsData = [
 	{ id: 1, iconURL: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/640px-React-icon.svg.png', title: 'React', description: 'description React' },
@@ -13,7 +13,7 @@ export function Skills() {
 	return (
 		<div className={s.container}>
 			<div className="wrapper">
-				<div className={s.title}>Мои скиллы</div>
+				<div className={s.title}>My skills</div>
 				<div className={s.content}>
 					{skillsData.map(s =>
 						<Skill

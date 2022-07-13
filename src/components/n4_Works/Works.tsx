@@ -1,6 +1,6 @@
 import React from "react";
 import { Work } from "./Work";
-import s from './Works.module.css';
+import s from './Works.module.scss';
 
 const worksData = [
 	{ id: 1, imgURL: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/640px-React-icon.svg.png', projectURL: '#', title: 'React', excerpt: 'description React' },
@@ -12,7 +12,7 @@ export function Works() {
 	return (
 		<div className={s.container}>
 			<div className="wrapper">
-				<div className={s.title}>Мои работы</div>
+				<div className={s.title}>My works</div>
 				<div className={s.content}>
 					{worksData.map(w =>
 						<Work

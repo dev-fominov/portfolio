@@ -1,14 +1,15 @@
 import React from 'react';
 
-import { Header } from './components/Header/Header';
-import { FirstBlock } from './components/FirstBlock/FirstBlock';
-import { Skills } from './components/Skills/Skills';
-import { Works } from './components/Works/Works';
-import { DistantWork } from './components/DistantWork/DistantWork';
-import { Contacts } from './components/Contacts/Contacts';
-import { Footer } from './components/Footer/Footer';
+import s from './scss/reset.module.scss';
+import { Header } from './components/n1_Header/Header';
+import { FirstBlock } from './components/n2_FirstBlock/FirstBlock';
+import { Skills } from './components/n3_Skills/Skills';
+import { Works } from './components/n4_Works/Works';
+import { DistantWork } from './components/n5_DistantWork/DistantWork';
+import { Contacts } from './components/n6_Contacts/Contacts';
+import { Footer } from './components/n7_Footer/Footer';
 
-import './App.css';
+import './App.scss';
 
 function App() {
   return (

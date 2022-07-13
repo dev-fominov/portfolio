@@ -1,5 +1,5 @@
 import React from "react";
-import s from './Works.module.css';
+import s from './Works.module.scss';
 
 type WorkType = {
 	id: number
@@ -14,7 +14,7 @@ export function Work(props: WorkType) {
 		<div className={s.itemWork}>
 			<div className={s.topContent}>
 				<img src={props.imgURL} alt="icon" />
-				<a href={props.projectURL}>Смотреть</a>
+				<a href={props.projectURL}>view</a>
 			</div>
 			<div className={s.contentExcerpt}>
 				<div className={s.itemTitle}>{props.title}</div>

@@ -1,5 +1,5 @@
 import React from "react";
-import s from './Header.module.css';
+import s from './Header.module.scss';
 
 export function Header() {
 	return (
@@ -8,10 +8,10 @@ export function Header() {
 				<header className={s.header}>
 					{/* <div className={s.logo}>Вадим Фоминов</div> */}
 					<div className={s.menu}>
-						<a href="#home">Главная</a>
-						<a href="#skills">Скиллы</a>
-						<a href="#works">Работы</a>
-						<a href="#home">Контакты</a>
+						<a href="#home">Home</a>
+						<a href="#skills">Skills</a>
+						<a href="#works">Works</a>
+						<a href="#home">Contacts</a>
 					</div>
 				</header>
 			</div>
