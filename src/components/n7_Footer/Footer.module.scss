@@ -1,29 +1,50 @@
-.container {
-	background-color: aliceblue;
-}
+@import '../../global-styles/fonts.scss';
+@import '../../global-styles/parts.scss';
 
-.footer {
-	min-height: 200px;
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: flex-end;
-	padding-bottom: 20px;
-	box-sizing: border-box;
-}
-.socseti {
-	margin-top: 30px;
-	margin-bottom: 30px;
-	display: flex;
-}
-.socseti li:not(:last-child) {
-	margin-right: 10px;
-}
-.socseti li {
-	width: 30px;
-	height: 30px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+.container {
+	background-color: rgba(248, 250, 252, 1.0);
+
+	.footer {
+		min-height: 200px;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-end;
+		padding-bottom: 50px;
+		padding-top: 50px;
+		box-sizing: border-box;
+	}
+
+	.socseti {
+		margin-top: 30px;
+		margin-bottom: 30px;
+		display: flex;
+
+		li {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			a {
+				font-size: 12px;
+				font-weight: 400;
+				letter-spacing: 2px;
+				text-transform: uppercase;
+				color: #000;
+				@include DosisRegular();
+				transition: $transition;
+				border-bottom: 1px solid transparent;
+
+				&:hover {
+					border-bottom: 1px solid #000;
+					transition: $transition;
+				}
+			}
+
+			&:not(:last-child) {
+				margin-right: 30px;
+			}
+		}
+	}
 }

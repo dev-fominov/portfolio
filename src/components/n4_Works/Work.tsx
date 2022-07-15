@@ -5,7 +5,7 @@ type WorkType = {
 	id: number
 	imgURL: string
 	title: string
-	excerpt: string
+	// excerpt: string
 	projectURL: string
 }
 
@@ -14,12 +14,14 @@ export function Work(props: WorkType) {
 		<div className={s.itemWork}>
 			<div className={s.topContent}>
 				<img src={props.imgURL} alt="icon" />
-				<a href={props.projectURL}>view</a>
+				<a href={props.projectURL}>
+					<div className={s.contentExcerpt}>
+						<div className={s.itemTitle}>{props.title}</div>
+						{/* <div className={s.excerpt}>{props.excerpt}</div> */}
+					</div>
+				</a>
 			</div>
-			<div className={s.contentExcerpt}>
-				<div className={s.itemTitle}>{props.title}</div>
-				<div className={s.excerpt}>{props.excerpt}</div>
-			</div>
+
 		</div>
 	)
 }

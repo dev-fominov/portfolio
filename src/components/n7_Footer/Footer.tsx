@@ -8,10 +8,10 @@ export function Footer() {
 				<footer className={s.footer}>
 					<div className={s.logo}>Vadim Fominov</div>
 					<ul className={s.socseti}>
-						<li><a href="#">FB</a></li>
+						<li><a href="#">fasebook</a></li>
 						<li><a href="#">VK</a></li>
-						<li><a href="#">INST</a></li>
-						<li><a href="#">GH</a></li>
+						<li><a href="#">Instagram</a></li>
+						<li><a href="#">GitHub</a></li>
 					</ul>
 					<div className={s.copy}>@2022 All rights reserved</div>
 				</footer>

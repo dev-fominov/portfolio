@@ -7,10 +7,10 @@ export function Contacts() {
 			<div className="wrapper">
 				<div className={s.title}>Contacts</div>
 				<form className={s.form}>
-					<input type="text" />
-					<input type="text" />
-					<textarea></textarea>
-					<button>Send</button>
+					<input type="text" placeholder="Name" />
+					<input type="email" placeholder="Email" />
+					<textarea placeholder="Message"></textarea>
+					<button>Send message</button>
 				</form>
 			</div>
 		</div>
